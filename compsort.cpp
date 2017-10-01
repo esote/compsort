@@ -255,7 +255,7 @@ void printVect(const std::vector<VT> & list, const int & prec, const std::string
 	}
 }
 
-// begin: heleprs
+// begin: helpers
 template<typename Order>
 struct non_strict_op:
 	std::binary_function<typename Order::second_argument_type,
