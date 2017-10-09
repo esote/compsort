@@ -287,7 +287,7 @@ void bogosort(It first, It last) {
 template<typename It>
 void bubble_sort(It first, It last) {
 	bool swapped = true;
-	while(first != --last && swapped) {
+	while(first != last-- && swapped) {
 		swapped = false;
 		for(auto i = first; i != last; ++i) {
 			if(*(i + 1) < *i) {
@@ -301,7 +301,7 @@ void bubble_sort(It first, It last) {
 template<typename It>
 void cocktail_sort(It first, It last) {
 	bool swapped = true;
-	while(first != --last && swapped) {
+	while(first != last-- && swapped) {
 		swapped = false;
 		for(auto i = first; i != last; ++i) {
 			if(*(i + 1) < *i) {
