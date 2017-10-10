@@ -1,1 +1,1 @@
-Refer to |coming eventually|
+Refer to https://esote.net/compsort.html
