@@ -208,7 +208,7 @@ returnID parse_args(program_args<VT> & args, const int & argc, char const * cons
 	if(args.fill_rand < 0) {
 		std::cerr << "error: '--fill-rand' must be >= 0\n";
 		return returnID::fill_rand_under;
-	} else if(vm.count("fill-rand") && !vm.count("fill-forward") && !vm.count("fill-backward")) {
+	} else if(vm.count("fill-rand") && !vm.count("fill-forward") && !vm.count("fill-backward") && !vm.count("list")) {
 		fill_rand(args);
 	}
 
